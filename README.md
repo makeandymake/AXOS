@@ -1,6 +1,6 @@
 # AXOS
 
- CircuitPython script to measure temperature from a DS18B20 One Wire Temp Sensor (connected by Grove QWIIC Hub and Display on Pimoroni Badger 2040)
+ CircuitPython script to measure temperature from a DS18B20 One Wire Temp Sensor (connected by Grove QWIIC Hub and Display on Pimoroni Badger 2040). I personally use this for monitoring the water temperature in my Axolotl tank.
 
 ## Hardware
 
