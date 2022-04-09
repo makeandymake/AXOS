@@ -1,14 +1,3 @@
-# putting this together is easy, you just need the following:
-# 
-#		* DS18B20 One Wire Temp Sensor (with Grove Connector)
-#		* Grove Quiic Hub
-#		* Pimoroni Badger 2040
-#
-# Connect up the devices (plug and play, no soldering required)
-# Flash the Badger 2040 with the latest CircuitPython UF2
-# Install all the libraries mentioned below in the lib folder
-# Copy the code below to code.py on the CIRCUITPY drive
-
 import board
 import terminalio
 import displayio
