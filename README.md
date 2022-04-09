@@ -16,9 +16,7 @@ Connect up the devices (plug and play, no soldering required)
 
 ## Software
 
-Flash the Badger 2040 with the latest CircuitPython UF2
-
-    https://circuitpython.org/board/pimoroni_badger2040/
+[Flash the Badger 2040 with the latest CircuitPython UF2](https://circuitpython.org/board/pimoroni_badger2040/)
 
 Copy everything from this repo (except `LICENSE` and `README.md`) to your CIRCUITPY drive
 
