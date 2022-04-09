@@ -26,10 +26,9 @@ palette[0] = 0xFFFFFF
 WHITE = 0xFFFFFF
 BLACK = 0x000000
 
+# Fredoka_One Font from Google Fonts
 font1 = bitmap_font.load_font("/fonts/Fredoka-75.bdf")
 font2 = bitmap_font.load_font("/fonts/Fredoka-32.bdf")
-
-
 
 # this is where we put all the stuff we want to display
 group = displayio.Group()
@@ -37,13 +36,13 @@ group = displayio.Group()
 # set background
 background = Rect(0, 0, display.width, display.height, fill=WHITE, outline=WHITE)
 
-# load an image
+# Load the Happy and Dead Axolotl images
 image1, palette = adafruit_imageload.load("/images/axolotl1.bmp", bitmap=displayio.Bitmap, palette=displayio.Palette)
 image2, palette = adafruit_imageload.load("/images/axolotl2.bmp", bitmap=displayio.Bitmap, palette=displayio.Palette)
 
 print("\n\n\n\n\nLoading AxOS...")
 
-# Loop forever so you can enjoy your message
+# Loop forever
 while True:
 
 	# update temperature	
@@ -52,6 +51,7 @@ while True:
 	# Set text, font, and color
 	text1 = str(temp) + 'ºc'
 
+	# If the temp is between 15ºc and 20ºc
 	if int(temp) > 15 and int(temp) < 20:
 		text2 = "Temp OK!"
 		pic = displayio.TileGrid(image1, pixel_shader=palette, x=168, y=0)
@@ -68,7 +68,6 @@ while True:
 	background = Rect(0, 0, display.width, display.height, fill=WHITE, outline=WHITE)
 
 	# Create the display group and append objects to it
-
 	group.append(background)
 	group.append(pic)
 	group.append(text1)
@@ -78,6 +77,7 @@ while True:
 	display.show(group)
 	display.refresh()
 
+	# wait for the defined time
 	time.sleep(delay)
 
 	# tidy up (saves memory)
